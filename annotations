@@ -1,0 +1,14 @@
+Baixar Pygame: http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame
+Dica: https://pt.stackoverflow.com/questions/438327/erro-ao-importar-pygame-no-pycharm
+
+Documentation: https://pypi.org/project/pygame/
+TODO Melhor forma: pip install pygame
+
+Pygame carrega bitmaps (.bmp) por padrão mas pode usar qualquer formato
+
+
+imagens com licença gratuita: http://pixabay.com/
+
+Converter imagem para bmp: https://onlinepngtools.com/
+
+Redimensionar imagem: https://www.iloveimg.com/pt/redimensionar-imagem

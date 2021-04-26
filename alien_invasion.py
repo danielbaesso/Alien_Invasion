@@ -6,13 +6,11 @@ from game_stats import GameStats
 from scoreboard import Scoreboard
 from button import Button
 from ship import Ship
-from alien import Alien
 import game_functions as gf
 
 def run_game():
     # Initialize pygame, settings, and screen object.
     pygame.init()
-    # Cria a tela e configurações (settings.py)
     ai_settings = Settings()
     screen = pygame.display.set_mode(
         (ai_settings.screen_width, ai_settings.screen_height))
@@ -47,4 +45,3 @@ def run_game():
                              aliens, bullets, play_button)
 
 run_game()
-

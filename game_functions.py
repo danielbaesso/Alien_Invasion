@@ -72,7 +72,6 @@ def check_play_button(ai_settings, screen, stats, sb, play_button, ship,
 def fire_bullet(ai_settings, screen, ship, bullets):
     """Fire a bullet, if limit not reached yet."""
     # Cria um novo projétil e o adiciona ao grupo de projéteis
-    # Limita a 3 tiros por vez (bullets_allowed)
     if len(bullets) < ai_settings.bullets_allowed:
         new_bullet = Bullet(ai_settings, screen, ship)
         bullets.add(new_bullet)
@@ -119,7 +118,7 @@ def check_high_score(stats, sb):
 def check_bullet_alien_collisions(ai_settings, screen, stats, sb, ship, aliens, bullets):
     """Respond to bullet-alien collisions."""
     # Remove any bullets and aliens that have collided.
-    # Para um projétil que atravesse os aliens, primeiro argumento booleano seria False
+    # For a projectile that cross the aliens: first Boolean argument should be False
     collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
 
     if collisions:
@@ -173,7 +172,7 @@ def ship_hit(ai_settings, screen, stats, sb, ship, aliens, bullets):
     create_fleet(ai_settings, screen, ship, aliens)
     ship.center_ship()
 
-    # Pause.a
+    # Pause.
     sleep(0.5)
 
 def check_aliens_bottom(ai_settings, screen, stats, sb, ship, aliens, bullets):
